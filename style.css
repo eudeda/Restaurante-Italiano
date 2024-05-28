@@ -16,6 +16,7 @@
     --laranja03: #C66300;
     --preto01:   #071013;
     --preto02:   #292827;
+    --preto03:   #333333;
 
     /* FONTS */
     --fonte-destaque: "Berkshire Swash", serif;
@@ -29,6 +30,11 @@ body {
 
 .limite {
     max-width: 1280px;
+    margin: 0 auto;
+}
+
+.limite2 {
+    max-width: 1480px;
     margin: 0 auto;
 }
 
@@ -58,6 +64,10 @@ h1, h2 {
     font-family: var(--fonte-destaque);
 }
 
+h2 {
+    color: var(--laranja03);
+}
+
 button {
     border: 0;
     border-radius: 30px;
@@ -67,10 +77,22 @@ button {
     font-family: var(--fonte-conteudo);
     color: #FFF;
     background-color: var(--laranja01);
+    
 }
 
 button:hover {
     background-color: var(--laranja03);
+    transform: scale(1.1);
+}
+
+@keyframes btnPulsar {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 /* ESTILO HEADER */
@@ -245,6 +267,7 @@ section.bem-vindo .flex {
 
 .bv-txt button:hover {
     background-color: var(--laranja01);
+    animation: btnPulsar .8s infinite alternate;
 }
 
 .bv-txt button i {
@@ -271,6 +294,7 @@ section.bem-vindo .flex {
     position: absolute;
     bottom: 0;
     width: 100%;
+    max-width: 377px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.11);
     color: white;
@@ -290,3 +314,83 @@ section.bem-vindo .flex {
 }
 
 /* ESTILO CARDÁPIO */
+
+section.cardapio {
+    padding: 40px 4%;
+    background-color: #fffaf2;
+}
+
+section.cardapio .flex {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    gap: 25px 20px;
+}
+
+.cardapio .txt-cardapio {
+    text-align: center;
+}
+
+.cardapio .txt-cardapio h2 {
+    font-size: 50px;
+    font-weight: 500;
+    padding: 0 0 10px 0;
+}
+
+.cardapio .txt-cardapio p {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.img-cardapio {
+    width: 260px;
+    height: 290px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+    transition: .2s;
+}
+
+.img-cardapio:hover {
+    width: 360px;
+    transform: scale(1.1);
+}
+
+.overlay-cardapio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000009c;
+    border-radius: 30px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .6s;
+    font-family: var(--fonte-conteudo);
+}
+
+.overlay-cardapio:hover {
+    opacity: 1;
+}
+
+section.cardapio .btn-cardapio {
+    text-align: center; 
+    margin-top: 100px;
+}
+
+section.cardapio .btn-cardapio button {
+    font-size: 16px;
+    padding: 18px 50px;
+}
+
+section.cardapio .btn-cardapio button:hover {
+    animation: btnPulsar .8s infinite alternate;
+}
