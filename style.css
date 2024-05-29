@@ -154,7 +154,7 @@ section.hero {
     position: relative;
     justify-content: center;
     align-items: center;
-    padding: 40px 4%;
+    padding: 400px 4%;
     height: 900px;
     background: url(assets/imgs/07/pizzaria-hero-fundo01.jpg) fixed no-repeat;
     background-size: cover;
@@ -208,7 +208,7 @@ section.hero .flex {
 /* ESTILO BEM-VINDO */
 
 section.bem-vindo {
-    padding: 40px 4%;
+    padding: 50px 4%;
     position: relative;
     background: url(assets/imgs/07/folha-fundo-02.jpg) no-repeat;
     background-size: cover;
@@ -320,7 +320,7 @@ section.bem-vindo .flex {
 /* ESTILO CARDÁPIO */
 
 section.cardapio {
-    padding: 40px 4%;
+    padding: 100px 4%;
     background-color: #fffaf2;
 }
 
@@ -480,4 +480,69 @@ section.promocao .flex {
 
 .promocao .txt-promo button i {
     margin-left: 10px;
+}
+
+/* ESTILO DEPOIMENTOS */
+section.depoimentos {
+    padding: 100px 4%;
+}
+
+section.depoimentos .flex {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 0 50px;
+}
+
+.depoimentos .aspas-depoimentos {
+    width: 50%;
+    text-align: center;
+}
+
+.depoimentos .aspas-depoimentos img {
+    width: 100%;
+    max-width: 260px;
+    opacity: .3;
+    padding: 0 0 60px 0;
+}
+
+.depoimentos .aspas-depoimentos h3 {
+    font-size: 40px;
+    font-family: var(--fonte-destaque);
+    font-weight: 500;
+    color: var(--laranja03);
+}
+
+.depoimentos .box-depoimento {
+    width: 50%;
+    text-align: center;
+}
+
+.box-depoimento img {
+    width: 100%;
+    max-width: 110px;
+    border-radius: 50%;
+}
+
+.box-depoimento p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 10px 0 20px 0;
+    color: var(--preto03);
+}
+
+.box-depoimento span {
+    display: block;
+}
+
+.box-depoimento .nome-pessoa {
+    font-size: 20px;
+    color: var(--preto03);
+    padding: 0 0 5px 0;
+}
+
+.box-depoimento .empresa-pessoa {
+    font-size: 15px;
+    color: #888888;
 }
