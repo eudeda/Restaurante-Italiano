@@ -68,6 +68,10 @@ h2 {
     color: var(--laranja03);
 }
 
+.marca-texto {
+    color: var(--laranja02);
+}
+
 button {
     border: 0;
     border-radius: 30px;
@@ -381,16 +385,99 @@ section.cardapio .flex {
     opacity: 1;
 }
 
-section.cardapio .btn-cardapio {
+.cardapio .btn-cardapio {
     text-align: center; 
     margin-top: 100px;
 }
 
-section.cardapio .btn-cardapio button {
+.cardapio .btn-cardapio button {
     font-size: 16px;
     padding: 18px 50px;
 }
 
-section.cardapio .btn-cardapio button:hover {
+.cardapio .btn-cardapio button:hover {
     animation: btnPulsar .8s infinite alternate;
+}
+
+/* ESTILO PROMOCAO */
+
+section.promocao {
+    padding: 120px 4%;
+    position: relative;
+    background: url(assets/imgs/07/folha-fundo-02.jpg) no-repeat;
+    background-size: cover;
+}
+
+section.promocao::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.726);
+    z-index: 0;
+}
+
+section.promocao .flex {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.promocao .img-promo {
+    width: 60%;
+    max-width: 600px;
+}
+
+.promocao .img-promo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.promocao .txt-promo {
+    text-align: center;
+    width: 500px
+}
+
+.promocao .txt-promo .icon-vinho {
+    display: block;
+    font-size: 30px;
+    color: #b12677;
+}
+
+.promocao .txt-promo span {
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+.promocao .txt-promo h2 {
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.promocao .txt-promo p {
+    font-size: 23px;
+    color: var(--preto02);
+    padding-bottom: 40px;
+}
+
+.promocao .txt-promo p span {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.promocao .txt-promo button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 17px 60px;
+}
+
+.promocao .txt-promo button:hover {
+    animation: btnPulsar .8s infinite alternate;
+}
+
+.promocao .txt-promo button i {
+    margin-left: 10px;
 }
