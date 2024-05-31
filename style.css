@@ -68,6 +68,12 @@ h2 {
     color: var(--laranja02);
 }
 
+.separador {
+    display: none;
+    border-top: 1px solid var(--laranja03);
+    width: 100%;
+}
+
 button {
     border: 0;
     border-radius: 30px;
@@ -111,10 +117,6 @@ footer .flex {
 header {
     padding: 25px 4%;
 }
-
-/* .navbar {
-    border: 1px solid red;
-} */
 
 header > .limite {
     display: flex;
@@ -162,6 +164,8 @@ section.hero {
     background: url(assets/imgs/07/pizzaria-hero-fundo01.jpg) fixed no-repeat;
     background-size: cover;
 }
+
+
 
 section.hero::before {
     content: '';
@@ -234,12 +238,12 @@ section.bem-vindo .flex {
 }
 
 .bem-vindo .bv-txt {
-    width: 30%;
-    height: 100%;
+    /* width: 100%; */
+    width: 400px;
     padding: 15px 10px;
 }
 
-.bem-vindo .bv-txt span {
+.bem-vindo .bv-txt span {  
     font-size: 18px;
     font-weight: 600;
 }
@@ -282,41 +286,41 @@ section.bem-vindo .flex {
 
 .bem-vindo .bv-img1 img {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
 }
 
-.bem-vindo .bv-img2 {
-    position: relative;
-    background: url(assets/imgs/07/restaurante02.jpg) no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    max-height: 620px;
-    max-width: 377px;
-}
-
-.bem-vindo .bv-img2 .img-legenda {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    max-width: 377px;
+.bem-vindo .bv-img2.flex {
+    justify-content: center;
+    align-items: flex-end;
+    color: #FFF;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.11);
-    color: white;
-    padding: 40px 0;
+    position: relative;
+    background: url('assets/imgs/07/restaurante02.jpg') center;
+    background-size: cover;
+    height: 620px;
+    width: 390px;
 }
 
-.bv-img2 .img-legenda span {
+.bem-vindo .bv-img2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.151);
+}
+
+.txt-bv-img2 h3{
     font-family: var(--fonte-destaque);
-    font-size: 40px;
     font-weight: 500;
+    font-size: 36px;
 }
 
-.bv-img2 .img-legenda p {
+.txt-bv-img2 p {
     font-size: 16px;
     font-weight: 400;
-    margin-top: 20px;
+    padding-bottom: 40px;
 }
 
 /* ESTILO CARDÁPIO */
@@ -612,4 +616,184 @@ footer.footer2 {
 
 footer.footer2 a {
     text-decoration: underline;
+}
+
+
+/* MEDIAS */
+
+@media screen and (max-width: 1020px) {
+    /* GERAL */
+    .flex {
+        flex-direction: column;
+    }
+    
+    .separador {
+        display: block;
+    }
+    
+    /* ESTILO HEADER */
+    header {
+        padding: 25px 8%;
+    }
+
+    /* ESTILO HERO */
+    section.hero {
+        padding: 400px 8%;
+    }
+    /* ESTILO BEM-VINDO */
+    
+    section.bem-vindo {
+        padding: 50px 8%;
+        background-image: none;
+    }
+    
+    .bem-vindo .bv-txt span {
+        font-size: 20px;
+    }
+
+    .bem-vindo .bv-txt .bv-desc-txt {
+        font-size: 21px;
+    }
+
+    .bv-txt button {
+        flex-direction: row;
+        font-size: 18px;
+        padding: 20px 50px;
+    }
+    
+    .bv-img1 {
+        display: none;
+    }
+
+    .bem-vindo .bv-img2.flex {
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    /* ESTILO CARDÁPIO */
+
+    section.cardapio {
+        padding: 100px 8%;
+    }
+
+    section.cardapio .flex {
+        align-items: center;
+    }
+
+    .img-cardapio {
+        width: 360px;
+        height: 290px;
+    }
+    
+    .img-cardapio:hover {
+        width: 370px;
+        transform: scale(1.1);
+    }
+
+    /* ESTILO PROMOCAO */
+    section.promocao {
+        padding: 120px 8%;
+        background-image: none;
+    }
+  
+    .promocao .img-promo {
+        width: 100%;
+    }
+    
+    .promocao .txt-promo {
+        width: 100%
+    }
+    
+    .promocao .txt-promo .icon-vinho {
+        font-size: 30px;
+    }
+    
+    .promocao .txt-promo span {
+        font-size: 20px;
+    }
+    
+    .promocao .txt-promo h2 {
+        font-size: 60px;
+        padding: 10px 0 35px 0;
+    }
+    
+    .promocao .txt-promo p {
+        font-size: 25px;
+    }
+    
+    .promocao .txt-promo button {
+        padding: 19px 80px;
+    }
+    
+    .promocao .txt-promo button:hover {
+        animation: btnPulsar .8s infinite alternate;
+    }
+    
+    .promocao .txt-promo button i {
+        margin-left: 10px;
+    }
+
+    /* ESTILO DEPOIMENTO */
+    section.depoimentos {
+        padding: 100px 8%;
+    }
+    
+    section.depoimentos .flex {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .depoimentos .aspas-depoimentos {
+        width: 100%;
+    }
+        
+    .depoimentos .aspas-depoimentos h3 {
+        font-size: 50px;
+    }
+    
+    .depoimentos .box-depoimento {
+        width: 100%;
+    }
+    
+    .box-depoimento p {
+        font-size: 21px;
+    }
+    
+    .box-depoimento span {
+        display: block;
+    }
+    
+    .box-depoimento .nome-pessoa {
+        font-size: 22px;
+    }
+    
+    .box-depoimento .empresa-pessoa {
+        font-size: 17px;
+    }
+
+    /* ESTILO FOOTERS */
+    footer.footer1 {
+        padding: 400px 8%;
+    }
+
+    .footer1 i {
+        font-size: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .footer1 h3 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    
+    .footer1 p {
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 80px;
+    }
+
+    footer.footer2 {
+        padding: 20px 8%;
+        font-size: 16px;
+    }
 }
