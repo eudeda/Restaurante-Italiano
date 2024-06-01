@@ -25,7 +25,7 @@
 }
 
 body {
-    height: 100vh;   
+    height: 100vh;
 }
 
 .limite {
@@ -164,8 +164,6 @@ section.hero {
     background: url(assets/imgs/07/pizzaria-hero-fundo01.jpg) fixed no-repeat;
     background-size: cover;
 }
-
-
 
 section.hero::before {
     content: '';
@@ -623,175 +621,191 @@ footer.footer2 a {
 
 @media screen and (max-width: 1020px) {
     /* GERAL */
-    .flex {
-        flex-direction: column;
-    }
-    
     .separador {
         display: block;
     }
-    
-    /* ESTILO HEADER */
-    header {
-        padding: 25px 8%;
+
+    /* HERO */
+
+    section.hero {
+        padding: 400px 4%;
     }
 
-    /* ESTILO HERO */
-    section.hero {
-        padding: 400px 8%;
-    }
-    /* ESTILO BEM-VINDO */
-    
+    /* BEM-VINDO */
+
     section.bem-vindo {
         padding: 50px 8%;
-        background-image: none;
+        background: none;
+    }
+
+    section.bem-vindo .flex {
+        flex-direction: column;
+        gap: 40px;
     }
     
-    .bem-vindo .bv-txt span {
+    .bem-vindo .bv-txt span {  
         font-size: 20px;
     }
-
-    .bem-vindo .bv-txt .bv-desc-txt {
-        font-size: 21px;
-    }
-
-    .bv-txt button {
-        flex-direction: row;
-        font-size: 18px;
-        padding: 20px 50px;
+    
+    .bem-vindo .bv-txt h2 {
+        font-size: 70px;
     }
     
-    .bv-img1 {
+    .bem-vindo .bv-txt .bv-info-txt {
+        font-size: 32px;
+    }
+    
+    .bem-vindo .bv-txt .bv-desc-txt {
+        font-size: 20px;
+        padding: 20px 0 60px 0;
+    }
+
+    .bv-txt button.flex {
+        flex-direction: row;
+    }
+
+    .bem-vindo .bv-img1 {
         display: none;
     }
-
+    
     .bem-vindo .bv-img2.flex {
-        align-items: center;
         justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .txt-bv-img2 h3{
+        font-size: 38px;
+    }
+    
+    .txt-bv-img2 p {
+        font-size: 18px;
     }
 
-    /* ESTILO CARDÁPIO */
+    /* CARDAPIO */
 
     section.cardapio {
         padding: 100px 8%;
     }
-
+    
     section.cardapio .flex {
-        align-items: center;
+        gap: 25px 0;
     }
-
+    
+    .cardapio .txt-cardapio h2 {
+        font-size: 50px;
+    }
+    
+    .cardapio .txt-cardapio p {
+        font-size: 26px;
+    }
+    
     .img-cardapio {
-        width: 360px;
+        width: 350px;
         height: 290px;
     }
     
     .img-cardapio:hover {
-        width: 370px;
-        transform: scale(1.1);
+        width: 360px;
+    }
+    
+    .overlay-cardapio {
+        text-align: center;
+    }
+    
+    .cardapio .btn-cardapio {
+        text-align: center; 
+        margin-top: 100px;
+    }
+    
+    .cardapio .btn-cardapio button {
+        font-size: 16px;
+        padding: 16px 50px;
     }
 
-    /* ESTILO PROMOCAO */
+    /* PROMOCAO */
+
     section.promocao {
         padding: 120px 8%;
-        background-image: none;
+        background: none;
     }
-  
+    
+    section.promocao .flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    
     .promocao .img-promo {
         width: 100%;
+        max-width: 600px;
     }
     
     .promocao .txt-promo {
-        width: 100%
+        text-align: center;
+        width: 100%;
     }
     
     .promocao .txt-promo .icon-vinho {
-        font-size: 30px;
+        font-size: 32px;
     }
     
     .promocao .txt-promo span {
-        font-size: 20px;
+        font-size: 19px;
     }
     
-    .promocao .txt-promo h2 {
-        font-size: 60px;
-        padding: 10px 0 35px 0;
-    }
-    
-    .promocao .txt-promo p {
-        font-size: 25px;
-    }
-    
-    .promocao .txt-promo button {
-        padding: 19px 80px;
-    }
-    
-    .promocao .txt-promo button:hover {
-        animation: btnPulsar .8s infinite alternate;
-    }
-    
-    .promocao .txt-promo button i {
-        margin-left: 10px;
+    .txt-promo p, span {
+        line-height: 30px;
     }
 
-    /* ESTILO DEPOIMENTO */
+    .promocao .txt-promo button {
+        padding: 17px 70px;
+    }
+    
+    /* DEPOIMENTOS */
+
     section.depoimentos {
         padding: 100px 8%;
     }
     
     section.depoimentos .flex {
-        justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        padding: 0 50px;
     }
-
+    
     .depoimentos .aspas-depoimentos {
         width: 100%;
-    }
-        
-    .depoimentos .aspas-depoimentos h3 {
-        font-size: 50px;
+        text-align: center;
     }
     
     .depoimentos .box-depoimento {
         width: 100%;
     }
     
-    .box-depoimento p {
+    .box-depoimento .nome-pessoa {
         font-size: 21px;
     }
     
-    .box-depoimento span {
-        display: block;
-    }
-    
-    .box-depoimento .nome-pessoa {
-        font-size: 22px;
-    }
-    
     .box-depoimento .empresa-pessoa {
-        font-size: 17px;
+        font-size: 16px;
     }
 
-    /* ESTILO FOOTERS */
+    /* FOOTERS */
+
     footer.footer1 {
         padding: 400px 8%;
     }
-
-    .footer1 i {
-        font-size: 60px;
-        padding-bottom: 40px;
-    }
     
     .footer1 h3 {
-        font-size: 30px;
-        letter-spacing: 2px;
+        font-size: 27px;
     }
     
     .footer1 p {
         font-size: 60px;
-        font-weight: 700;
-        line-height: 80px;
     }
-
+    
     footer.footer2 {
         padding: 20px 8%;
         font-size: 16px;
