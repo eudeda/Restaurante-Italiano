@@ -625,6 +625,15 @@ footer.footer2 a {
         display: block;
     }
 
+    header nav.menu-desktop {
+        display: none;
+    }
+
+    .flex {
+        align-items: center;
+        justify-content: center;
+    }
+
     /* HERO */
 
     section.hero {
@@ -640,23 +649,22 @@ footer.footer2 a {
 
     section.bem-vindo .flex {
         flex-direction: column;
-        gap: 40px;
     }
     
     .bem-vindo .bv-txt span {  
-        font-size: 20px;
+        font-size: 16px;
     }
     
     .bem-vindo .bv-txt h2 {
-        font-size: 70px;
+        font-size: 50px;
     }
     
     .bem-vindo .bv-txt .bv-info-txt {
-        font-size: 32px;
+        font-size: 22px;
     }
     
     .bem-vindo .bv-txt .bv-desc-txt {
-        font-size: 20px;
+        font-size: 18px;
         padding: 20px 0 60px 0;
     }
 
@@ -799,11 +807,12 @@ footer.footer2 a {
     }
     
     .footer1 h3 {
-        font-size: 27px;
+        font-size: 24px;
+        letter-spacing: normal;
     }
     
     .footer1 p {
-        font-size: 60px;
+        font-size: 45px;
     }
     
     footer.footer2 {
