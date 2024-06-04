@@ -680,8 +680,9 @@ footer.footer2 a {
     .bem-vindo .bv-img2.flex {
         justify-content: flex-end;
         align-items: center;
+        width: 350px;
     }
-    
+
     .txt-bv-img2 h3{
         font-size: 38px;
     }
