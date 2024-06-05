@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="/assets/imgs/07/fresco-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Fresco | Culinária Italiana</title>
 </head>
 
@@ -15,25 +17,50 @@
 
             <div class="logo">
                 <a href="#">
-                    <img src="assets/imgs/07/fresco-logo-pequeno2.png" alt="Logo do restaurante">
+                    <img src="/assets/imgs/07/fresco-logo-pequeno2.png" alt="Logo do restaurante">
                 </a>
             </div>
 
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Cardápio</a></li>
-                    <li><a href="#">Quem somos</a></li>
-                    <li><a href="#">Notícias</a></li>
-                </ul>
-
-                <div class="btn-contato">
-                    <a href="#">
-                        <button>Contato</button>
-                    </a>
+            <div class="navs">
+                <div class="menu-desktop">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Cardápio</a></li>
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#">Notícias</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn-contato">
+                        <a href="#">
+                            <button>Contato</button>
+                        </a>
+                    </div>
                 </div>
 
-            </nav>
+                <div id="btn-menu" class="btn-abrir-menu">
+                    <i class="bi bi-list"></i>
+                </div>
+    
+                <div id="menu-mobile" class="menu-mobile">
+                    <div class="btn-fechar">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+    
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Cardápio</a></li>
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#">Notícias</a></li>
+                        </ul>
+                    </nav> <!-- FIM DO MENU MOBILE -->
+    
+                </div>
+                <div id="overlay-menu" class="overlay-menu"></div>
+
+            </div> <!-- FIM DO MENU DESKTOP -->
+        </div>
 
         </div>
     </header>
@@ -43,7 +70,7 @@
             <div class="limite">
                 <div class="flex">
                     <div class="barra-horizontal">
-                        <img src="assets/imgs/07/barra-horizontal.png" alt="barra-horizontal">
+                        <img src="/assets/imgs/07/barra-horizontal.png" alt="barra-horizontal">
                     </div>
 
                     <div class="hero-txt">
@@ -68,7 +95,7 @@
                     </div>
 
                     <div class="bv-img1">
-                        <img src="assets/imgs/07/pizza.jpg" alt="pizza">
+                        <img src="/assets/imgs/07/pizza.jpg" alt="pizza">
                     </div>
 
                     <div class="bv-img2 flex">
@@ -86,22 +113,22 @@
             <div class="limite">
 
                 <div class="txt-cardapio">
-                    <img src="assets/imgs/07/folha-fundo-01.png" alt="folha">
+                    <img src="/assets/imgs/07/folha-fundo-01.png" alt="folha">
                     <h2>Nosso Cardápio</h2>
                     <p>Ingredientes de qualidade, pratos saborosos</p>
                 </div>
 
                 <div class="flex">
-                    <div class="img-cardapio" style="background-image: url(assets/imgs/07/prato02-300x255.jpg);">
+                    <div class="img-cardapio" style="background-image: url(/assets/imgs/07/prato02-300x255.jpg);">
                         <div class="overlay-cardapio">Spaghetti Primavera Tropical</div>
                     </div>
-                    <div class="img-cardapio" style="background-image: url(assets/imgs/07/prato01-300x255.jpg);">
+                    <div class="img-cardapio" style="background-image: url(/assets/imgs/07/prato01-300x255.jpg);">
                         <div class="overlay-cardapio">Fettuccine Rústico ao Pesto</div>
                     </div>
-                    <div class="img-cardapio" style="background-image: url(assets/imgs/07/prato04-300x255.jpg);">
+                    <div class="img-cardapio" style="background-image: url(/assets/imgs/07/prato04-300x255.jpg);">
                         <div class="overlay-cardapio">Salmone alla Genovese</div>
                     </div>
-                    <div class="img-cardapio" style="background-image: url(assets/imgs/07/prato03-300x255.jpg);">
+                    <div class="img-cardapio" style="background-image: url(/assets/imgs/07/prato03-300x255.jpg);">
                         <div class="overlay-cardapio">Pizza Rustica Mediterranea</div>
                     </div>
             </div>
@@ -117,7 +144,7 @@
                 <div class="flex">
                     
                     <div class="img-promo">
-                        <img src="assets/imgs/07/restaurante01-768x578.jpg" alt="clientes bebendo">
+                        <img src="/assets/imgs/07/restaurante01-768x578.jpg" alt="clientes bebendo">
                     </div>
 
                     <div class="txt-promo">
@@ -136,12 +163,12 @@
                 <div class="flex">
 
                     <div class="aspas-depoimentos">
-                        <img src="assets/imgs/09/aspas.png" alt="aspas">
+                        <img src="/assets/imgs/09/aspas.png" alt="aspas">
                         <h3>Depoimentos</h3>
                     </div>
 
                     <div class="box-depoimento">
-                        <img src="assets/imgs/09/depoimento02.png" alt="Foto Joana L">
+                        <img src="/assets/imgs/09/depoimento02.png" alt="Foto Joana L">
                         <p>“A melhor pizza do bairro, e quando pedimos o vinho para acompanhar, temos a dupla perfeita. Recomendo a todos aqueles que procuram um lugar agradável para jantar”</p>
                         <span class="nome-pessoa">Joana L</span>
                         <span class="empresa-pessoa">Facebook</span>
@@ -150,7 +177,7 @@
                     <div class="separador"></div>
 
                     <div class="box-depoimento">
-                        <img src="assets/imgs/09/depoimento01.png" alt="Foto Clarissa J">
+                        <img src="/assets/imgs/09/depoimento01.png" alt="Foto Clarissa J">
                         <p>“A melhor pizza do bairro, e quando pedimos o vinho para acompanhar, temos a dupla perfeita. Recomendo a todos aqueles que procuram um lugar agradável para jantar”</p>
                         <span class="nome-pessoa">Clarissa J</span>
                         <span class="empresa-pessoa">Youtube</span>
@@ -159,7 +186,7 @@
                     <div class="separador"></div>
 
                     <div class="box-depoimento">
-                        <img src="assets/imgs/09/depoimento03.png" alt="Foto Luciana P">
+                        <img src="/assets/imgs/09/depoimento03.png" alt="Foto Luciana P">
                         <p>“A melhor pizza do bairro, e quando pedimos o vinho para acompanhar, temos a dupla perfeita. Recomendo a todos aqueles que procuram um lugar agradável para jantar”</p>
                         <span class="nome-pessoa">Luciana P</span>
                         <span class="empresa-pessoa">Google</span>
@@ -185,6 +212,7 @@
         <p>Frésco Restaurante © 2024 | Desenvolvido por <a href="https://portfolio-seven-xi-10.vercel.app/" target="_blank" class="marca-texto">Louanderson Santos</a></p>
     </footer>  <!-- Fim do footer2 -->
 
+    <script src="/javascript/menu.js"></script>
 </body>
 
 </html>

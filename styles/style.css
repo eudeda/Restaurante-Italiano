@@ -119,6 +119,16 @@ header {
     padding: 25px 4%;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #FFF;
+    padding: 15px 4%;
+}
+
 header > .limite {
     display: flex;
     justify-content: space-between;
@@ -130,12 +140,12 @@ header a {
     color: var(--preto02);
 }
 
-header nav.menu-desktop {
+header .menu-desktop {
     display: flex;
     align-items: center;
 }
 
-header nav.menu-desktop ul li {
+header .menu-desktop ul li {
     display: inline-block;
     padding: 0 25px;
 }
@@ -152,6 +162,70 @@ header nav.menu-desktop ul li {
     font-size: 18px;
 }
 
+/* MENU MOBILE */
+
+.btn-abrir-menu i {
+    display: none;
+    color: var(--cor01);
+    font-size: 40px;
+}
+
+.menu-mobile {
+    background-color: var(--laranja01);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 0%;
+    transition: .3s;
+    overflow: hidden;
+    border-radius: 90px 0 0 1200px;
+}
+
+.menu-mobile.abrir-menu {
+    width: 60%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu {
+    display: block;
+}
+
+.menu-mobile .btn-fechar i {
+    color: #000;
+    font-size: 30px;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 5%;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    display: block;
+    padding: 20px 8%;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: var(--laranja03);
+}
+
+.overlay-menu {
+    background-color: #000000c9;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
 
 /* ESTILO HERO */
 
@@ -161,8 +235,9 @@ section.hero {
     justify-content: center;
     align-items: center;
     padding: 400px 4%;
+    margin-top: 50px;
     height: 900px;
-    background: url(assets/imgs/07/pizzaria-hero-fundo01.jpg) fixed no-repeat;
+    background: url('/assets/imgs/07/pizzaria-hero-fundo01.jpg') fixed no-repeat;
     background-size: cover;
 }
 
@@ -215,7 +290,7 @@ section.hero .flex {
 section.bem-vindo {
     padding: 50px 4%;
     position: relative;
-    background: url(assets/imgs/07/folha-fundo-02.jpg) no-repeat;
+    background: url('/assets/imgs/07/folha-fundo-02.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -294,7 +369,7 @@ section.bem-vindo .flex {
     color: #FFF;
     text-align: center;
     position: relative;
-    background: url('assets/imgs/07/restaurante02.jpg') center;
+    background: url('/assets/imgs/07/restaurante02.jpg') center;
     background-size: cover;
     height: 620px;
     width: 390px;
@@ -409,7 +484,7 @@ section.cardapio .flex {
 section.promocao {
     padding: 120px 4%;
     position: relative;
-    background: url(assets/imgs/07/folha-fundo-02.jpg) no-repeat;
+    background: url('/assets/imgs/07/folha-fundo-02.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -490,6 +565,7 @@ section.promocao .flex {
 /* ESTILO DEPOIMENTOS */
 section.depoimentos {
     padding: 100px 4%;
+    background-color: #fffaf2;
 }
 
 section.depoimentos .flex {
@@ -561,7 +637,7 @@ footer.footer1 {
     text-align: center;
     padding: 400px 4%;
     height: 800px;
-    background: url(assets/imgs/07/pizzaria-hero-fundo02.jpg) no-repeat;
+    background: url('/assets/imgs/07/pizzaria-hero-fundo02.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -618,21 +694,33 @@ footer.footer2 a {
 }
 
 
-/* MEDIAS */
+/* RESPONSIVO */
 
-@media screen and (max-width: 1020px) {
+    /* AJUSTES MOBILE */
+@media screen and (max-width: 1020px) and (min-width: 360px) {
+    
     /* GERAL */
     .separador {
         display: block;
     }
 
-    header nav.menu-desktop {
-        display: none;
-    }
-
     .flex {
         align-items: center;
         justify-content: center;
+    }
+
+    /* HEADER */
+
+    header .menu-desktop {
+        display: none;
+    } 
+
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+
+    .btn-abrir-menu i {
+        display: block;
     }
 
     /* HERO */
@@ -654,15 +742,14 @@ footer.footer2 a {
     
     .bem-vindo .bv-txt {
         width: 100%;
-        border: 1px solid red;
     }
 
     .bem-vindo .bv-txt span {  
-        font-size: 16px;
+        font-size: 18px;
     }
     
     .bem-vindo .bv-txt h2 {
-        font-size: 50px;
+        font-size: 55px;
     }
     
     .bem-vindo .bv-txt .bv-info-txt {
@@ -703,6 +790,7 @@ footer.footer2 a {
     }
     
     section.cardapio .flex {
+        flex-direction: column;
         gap: 25px 0;
     }
     
@@ -715,12 +803,12 @@ footer.footer2 a {
     }
     
     .img-cardapio {
-        width: 350px;
+        width: 290px;
         height: 290px;
     }
     
     .img-cardapio:hover {
-        width: 360px;
+        width: 310px;
     }
     
     .overlay-cardapio {
@@ -814,16 +902,60 @@ footer.footer2 a {
     }
     
     .footer1 h3 {
-        font-size: 24px;
+        font-size: 30px;
         letter-spacing: normal;
     }
     
     .footer1 p {
-        font-size: 45px;
+        font-size: 55px;
     }
     
     footer.footer2 {
         padding: 20px 8%;
         font-size: 16px;
+    }
+}
+
+    /* AJUSTES DE QUEBRA DAS IMAGENS DO CARDAPIO */
+@media screen and (max-width: 1320px) { 
+    .img-cardapio {
+        width: 300px;
+        height: 290px;
+    }
+}
+
+    /* AJUSTES DE QUEBRA DAS IMAGENS DO CARDAPIO */
+@media screen and (max-width: 1101px){
+    .img-cardapio {
+        width: 320px;
+        height: 290px;
+    }
+}
+
+    /* AJUSTES PARA TABLETS */
+@media screen and (max-width: 1020px) and (min-width: 760px) {
+    section.bem-vindo .flex {
+        flex-direction: row;
+    }
+
+    .bem-vindo .bv-img2.flex {
+        justify-content: center;
+        align-items: flex-end;
+        width: 680px;
+    }
+
+    section.promocao .flex {
+        flex-direction: row;
+    }
+
+    .promocao .img-promo {
+        width: 800px;
+        height: 300px;
+    }
+    
+    .promocao .img-promo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
     }
 }
