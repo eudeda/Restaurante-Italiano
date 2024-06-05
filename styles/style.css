@@ -237,7 +237,7 @@ section.hero {
     padding: 400px 4%;
     margin-top: 50px;
     height: 900px;
-    background: url('/assets/imgs/07/pizzaria-hero-fundo01.jpg') fixed no-repeat;
+    background: url('../assets/imgs/07/pizzaria-hero-fundo01.jpg') fixed no-repeat;
     background-size: cover;
 }
 
@@ -290,7 +290,7 @@ section.hero .flex {
 section.bem-vindo {
     padding: 50px 4%;
     position: relative;
-    background: url('/assets/imgs/07/folha-fundo-02.jpg') no-repeat;
+    background: url('../assets/imgs/07/folha-fundo-02.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -369,7 +369,7 @@ section.bem-vindo .flex {
     color: #FFF;
     text-align: center;
     position: relative;
-    background: url('/assets/imgs/07/restaurante02.jpg') center;
+    background: url('../assets/imgs/07/restaurante02.jpg') center;
     background-size: cover;
     height: 620px;
     width: 390px;
@@ -484,7 +484,7 @@ section.cardapio .flex {
 section.promocao {
     padding: 120px 4%;
     position: relative;
-    background: url('/assets/imgs/07/folha-fundo-02.jpg') no-repeat;
+    background: url('../assets/imgs/07/folha-fundo-02.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -637,7 +637,7 @@ footer.footer1 {
     text-align: center;
     padding: 400px 4%;
     height: 800px;
-    background: url('/assets/imgs/07/pizzaria-hero-fundo02.jpg') no-repeat;
+    background: url('../assets/imgs/07/pizzaria-hero-fundo02.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
