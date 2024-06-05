@@ -803,12 +803,12 @@ footer.footer2 a {
     }
     
     .img-cardapio {
-        width: 290px;
-        height: 290px;
+        width: 250px;
+        height: 260px;
     }
-    
+
     .img-cardapio:hover {
-        width: 310px;
+        width: 290px;
     }
     
     .overlay-cardapio {
