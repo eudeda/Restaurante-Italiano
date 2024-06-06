@@ -100,7 +100,7 @@ header .menu-desktop ul li {
     width: 60%;
 }
 
-.menu-mobile.abrir-menu ~ .overlay-menu {
+.menu-mobile.abrir-menu~.overlay-menu {
     display: block;
 }
 
@@ -140,21 +140,6 @@ header .menu-desktop ul li {
     display: none;
 }
 
-
-@media screen and (max-width: 1020px) and (min-width: 360px) {
-    header .menu-desktop {
-        display: none;
-    } 
-
-    .menu-desktop, .btn-contato {
-        display: none;
-    }
-
-    .btn-abrir-menu i {
-        display: block;
-    }
-}
-
 /* HERO */
 
 section.hero-cardapio {
@@ -180,7 +165,7 @@ section.hero-cardapio::before {
     z-index: 1;
 }
 
-section.hero-cardapio > .limite {
+section.hero-cardapio>.limite {
     width: 1280px;
     margin: 0 auto;
 }
@@ -325,4 +310,91 @@ footer.footer2 {
 
 footer.footer2 a {
     text-decoration: underline;
+    }
+    
+    /* MEDIAS */
+    
+@media screen and (max-width: 1020px) and (min-width: 320px) {
+    /* HEADER */
+    header .menu-desktop {
+        display: none;
+    }
+
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .btn-abrir-menu i {
+        display: block;
+    }
+
+    /* MAIN */
+    main {
+        position: relative;
+        background: none;
+    }
+
+    /* SECTIONS CARDAPIO */
+
+    section.hero-cardapio {
+        padding: 0 8%;
+    }
+
+    section.menu {
+        padding: 50px 4%;
+    }
+
+    /* CARDAPIO */
+
+    .box-menu {
+        background-color: rgba(247, 226, 212, 0.5);
+        border-radius: 20px;
+    } 
+
+    .box-menu.flex {
+        flex-direction: column;
+    }
+
+    .box-menu .txts-container {
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+
+    #menu-pizzas .box-menu.flex {
+        flex-direction: row;
+    }
+
+    .box-menu .img-menu {
+        display: none;
+    }
+
+    .item.flex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .item .txt-item h3 {
+        font-size: 32px;
+    }
+
+    /* FOOTERS */
+
+    footer.footer1 {
+        padding: 400px 8%;
+    }
+
+    .footer1 h3 {
+        font-size: 30px;
+        letter-spacing: normal;
+    }
+
+    .footer1 p {
+        font-size: 55px;
+    }
+
+    footer.footer2 {
+        padding: 20px 8%;
+        font-size: 16px;
+    }
 }
