@@ -420,7 +420,7 @@ section.depoimentos .flex {
 /* RESPONSIVO */
 
     /* AJUSTES MOBILE */
-@media screen and (max-width: 1020px) and (min-width: 360px) {
+@media screen and (max-width: 1020px) and (min-width: 320px) {
     
     /* GERAL */
     .separador {
