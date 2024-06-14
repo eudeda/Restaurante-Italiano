@@ -1,0 +1,197 @@
+
+/* HERO */
+
+section.hero-contato {
+    display: flex;
+    margin-top: 74px;
+    position: relative;
+    align-items: center;
+    padding: 200px 4%;
+    height: 700px;
+    background: url('../assets/imgs/08/pizzaria-hero-fundo03.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.hero-contato::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.678);
+    z-index: 1;
+}
+
+section.hero-contato>.limite {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+section.hero-contato .flex {
+    flex-direction: column;
+}
+
+section.hero-contato .hero-txt h1, p {
+    font-size: 70px;
+    color: #FFF;
+}
+
+.hero-txt h1 {
+    font-weight: 500;
+}
+
+.hero-txt p {
+    padding: 20px 0;
+}
+
+/* TITULO FORMULARIO */
+
+section.formulario {
+    padding: 100px 4%;
+}
+
+.titulo-formulario.flex {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.titulo-formulario h2 {
+    font-size: 45px;
+    font-weight: 500;
+    color: #000;
+}
+
+.titulo-formulario .separador {
+    border-top: 2px solid;
+    width: 200px;
+}
+
+.titulo-formulario p {
+    font-size: 20px;
+    color: var(--preto02);
+}
+
+/* FORMULARIO */
+
+form.flex {
+    flex-direction: column;
+}
+
+.campos .flex {
+    flex-direction: column;
+}
+
+label {
+    font-family: var(--fonte-conteudo);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+label span {
+    color: red;
+}
+
+form input {
+    height: 43px;
+    outline-color: var(--laranja02);
+    padding: 10px;
+    font-size: 18px;
+}
+
+form input::placeholder {
+    font-size: 16px;
+    font-family: var(--fonte-conteudo);
+    opacity: .6;
+}
+
+form label {
+    padding-bottom: 15px;
+}
+
+/* CAMPO NOME */
+
+.form-nome {
+    width: 100%;
+}
+
+.form-nome label {
+    padding-bottom: 15px;
+}
+
+/* CAMPO EMAIL E NUMERO */
+
+.form-email-num {
+    width: 100%;
+}
+
+.form-email-num .flex {
+    justify-content: space-between;
+    padding: 23px 0;
+}
+
+.email.flex, 
+.numero.flex {
+    flex-direction: column;
+}
+
+.email,
+.numero {
+    width: 50%;
+}
+
+.email {
+    margin-right: 20px;
+}
+
+/* CAMPO UNIDADES */
+
+.form-unidade {
+    width: 60%;
+}
+
+.form-unidade .flex {
+    padding-bottom: 46px;
+}
+
+.form-unidade select {
+    height: 43px;
+    font-family: var(--fonte-conteudo);
+    font-size: 17px;
+    padding-left: 10px;
+    opacity: .7;
+    outline-color: var(--laranja02);
+}
+
+.form-unidade option {
+    font-family: var(--fonte-conteudo);
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000c7;
+}
+
+/* CAMPO MENSAGEM */
+
+.form-mensagem textarea {
+    resize: none;
+    height: 150px;
+    outline-color: var(--laranja02);
+    padding: 10px;
+    font-size: 18px;
+}
+
+.form-mensagem p {
+    font-size: 15px;
+    padding: 10px 0 20px 0;
+    color: gray;
+}
+
+/* BOTAO FORMULARIO */
+
+.btn-formulario {
+    background-color: var(--laranja05);
+    border-radius: 3px;
+    font-size: 17px;
+}

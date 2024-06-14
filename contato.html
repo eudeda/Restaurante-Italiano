@@ -3,34 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/imgs/07/fresco-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="styles/contato.css">
     <title>Contato - Frésco</title>
 </head>
 <body>
-    <style>
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        main p {
-            font-size: 20px;
-        }
+    <header class="navbar">
+        <div class="limite">
 
-        main img {
-            border-radius: 20px;
-        }
+            <div class="logo">
+                <a href="#">
+                    <img src="../assets/imgs/07/fresco-logo-pequeno2.png" alt="Logo do restaurante">
+                </a>
+            </div>
 
-        body {
-            background-color: rgb(253, 220, 183);
-        }
-    </style>
+            <div class="navs">
+                <div class="menu-desktop">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cardapio.html">Cardápio</a></li>
+                            <li><a href="quem-somos.html">Quem somos</a></li>
+                            <li><a href="noticias.html">Notícias</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn-contato">
+                        <a href="contato.html">
+                            <button>Contato</button>
+                        </a>
+                    </div>
+                </div> <!-- FIM DO MENU DESKTOP -->
+
+                <div id="btn-menu" class="btn-abrir-menu">
+                    <i class="bi bi-list"></i>
+                </div>
+    
+                <div id="menu-mobile" class="menu-mobile">
+                    <div class="btn-fechar">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+    
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cardapio.html">Cardápio</a></li>
+                            <li><a href="quem-somos.html">Quem somos</a></li>
+                            <li><a href="noticias.html">Notícias</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav> <!-- FIM DO MENU MOBILE -->
+    
+                </div>
+                <div id="overlay-menu" class="overlay-menu"></div>
+            </div>
+        </div>
+
+        </div>
+    </header> <!-- FIM DO HEADER -->
 
     <main>
-        <h1>🚧EM BREVE...</h1>
-        <p>enquanto isso, observe o bob esponja quebrando tudo</p>
-        <img src="https://media1.tenor.com/m/BwKANaB-zwIAAAAC/bob-esponja-dan%C3%A7ando.gif" alt="">
+        <section id="topo-contato" class="hero-contato">
+            <div class="limite">
+                <div class="flex">
+                    <div class="hero-txt">
+                        <h1>Reserve uma mesa</h1>
+                        <p>94002-8922</p>
+                    </div>
+
+                    <div class="barra-horizontal">
+                        <img src="./assets/imgs/07/barra-horizontal.png" alt="barra-horizontal">
+                    </div>
+                </div>
+            </div>
+        </section> <!-- FIM DO HERO -->
+
+        <section id="formulario" class="formulario">
+            <div class="limite">
+                <div class="titulo-formulario flex">
+                    <h2>Entre em contato</h2>
+                    <div class="separador"></div>
+                    <p>Envie sua mensagem preenchendo o formulário abaixo</p>
+                </div>
+
+                <form action="" class="flex">
+                    <div class="form-nome campos">
+                        <div class="flex">
+                            <label for="nome">
+                                Nome completo
+                                <span class="campo-obrigatorio">*</span>
+                            </label>
+                            <input type="text" id="nome" name="nome" placeholder="seu nome completo aqui" required>
+                        </div>
+                    </div>
+
+                    <div class="form-email-num">
+                        <div class="flex">
+                            <div class="email flex">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="seu e-mail aqui">
+                            </div>
+
+                            <div class="numero flex">
+                                <label for="numero">
+                                    Telefone
+                                    <span class="campo-obrigatorio">*</span>
+                                </label>
+                                <input type="tel" id="numero" name="numero" placeholder="seu telefone aqui" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-unidade campos">
+                        <div class="flex">
+                            <label for="unidade">Com qual unidade você precisa entrar em contato?</label>
+                            <select id="unidade" name="unidade">
+                                <option value class ="placeholder" disabled selected="selected">Selecione uma unidade...</option>
+                                <option value="unidade1">Unidade 1</option>
+                                <option value="unidade2">Unidade 2</option>
+                                <option value="unidade3">Unidade 3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-mensagem campos">
+                        <div class="flex">
+                            <label for="mensagem">
+                                Sua mensagem
+                                <span class="campo-obrigatorio">*</span>
+                            </label>
+                            <textarea id="mensagem" name="mensagem"></textarea>
+                            <p>Seja o mais descritivo possível</p>
+                        </div>
+                    </div>
+                </form>
+                <button class="btn-formulario">Enviar Mensagem</button>
+            </div>
+        </section>
     </main>
 </body>
 </html>
