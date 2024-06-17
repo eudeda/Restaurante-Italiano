@@ -1,0 +1,93 @@
+/* HERO */
+
+section.hero-eventos {
+    display: flex;
+    margin-top: 74px;
+    position: relative;
+    align-items: center;
+    padding: 200px 4%;
+    height: 700px;
+    background: url('../assets/imgs/08/eventos-hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.hero-eventos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.678);
+    z-index: 1;
+}
+
+section.hero-eventos>.limite {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+section.hero-eventos .flex {
+    flex-direction: column;
+}
+
+.hero-txt h1 {
+    color: #FFF;
+}
+
+.hero-txt h1 {
+    font-size: 85px;
+    font-weight: 500;
+}
+
+.hero-eventos .barra-horizontal img {
+    width: 280px;
+}
+
+/* EVENTOS */
+
+section.eventos {
+    padding: 160px 4%;
+}
+
+section.eventos .flex {
+    justify-content: space-between;
+}
+
+section.eventos .item {
+    margin-bottom: 140px;
+}
+
+.padrao-txt {
+    width: 550px;
+}
+
+.padrao-img img {
+    width: 550px;
+    border-radius: 5px;
+}
+
+.padrao-txt h2 {
+    font-size: 40px;
+    font-family: var(--fonte-conteudo);
+    color: var(--preto01);
+    margin-bottom: 30px;
+}
+
+.padrao-txt p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.padrao-txt button {
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: var(--preto01);
+}
+
+.reverse.flex {
+    flex-direction: row-reverse;
+}

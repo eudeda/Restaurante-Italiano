@@ -1,36 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/imgs/07/fresco-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/eventos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Eventos - Frésco</title>
-    
-    <style>
-        body {
-            background-color: rgb(252, 238, 221);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        main {
-            text-align: center;
-        }
-
-        p {
-            font-size: 18px;
-        }
-    </style>
 </head>
+
 <body>
 
+    <header class="navbar">
+        <div class="limite">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../assets/imgs/07/fresco-logo-pequeno2.png" alt="Logo do restaurante">
+                </a>
+            </div>
+
+            <div class="navs">
+                <div class="menu-desktop">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cardapio.html">Cardápio</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="quem-somos.html">Quem somos</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn-contato">
+                        <a href="contato.html">
+                            <button>Contato</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="btn-menu" class="btn-abrir-menu">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <div id="menu-mobile" class="menu-mobile">
+                    <div class="btn-fechar">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="cardapio.html">Cardápio</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="quem-somos.html">Quem somos</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav> <!-- FIM DO MENU MOBILE -->
+
+                </div>
+                <div id="overlay-menu" class="overlay-menu"></div>
+
+            </div> <!-- FIM DO MENU DESKTOP -->
+        </div>
+
+        </div>
+    </header> <!-- FIM DO HEADER -->
+
     <main>
-        <h1>🚧EM BREVE...</h1>
-        <p>enquanto isso, observe o bob esponja quebrando tudo</p>
-        <img src="https://media1.tenor.com/m/BwKANaB-zwIAAAAC/bob-esponja-dan%C3%A7ando.gif" alt="" width="80%">
+        <section id="topo-eventos" class="hero-eventos">
+            <div class="limite">
+                <div class="flex">
+                    <div class="hero-txt">
+                        <h1>Eventos</h1>
+                    </div>
+
+                    <div class="barra-horizontal">
+                        <img src="./assets/imgs/07/barra-horizontal.png" alt="barra-horizontal">
+                    </div>
+                </div>
+            </div>
+        </section> <!-- FIM DO HERO -->
+
+        <section id="eventos" class="eventos">
+            <div class="limite">
+
+                <div class="item corporativo flex">
+                    <div class="corporativo-txt padrao-txt">
+                        <h2>EVENTOS CORPORATIVOS</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus optio vel et quae iste,
+                            itaque qui architecto quisquam, aliquam fugit laborum sint illum delectus, asperiores
+                            numquam aut. Magni, quasi ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Consectetur enim rem sint quaerat voluptatibus eaque voluptatum, temporibus esse ea suscipit
+                            tempora.</p>
+                        <a href="contato.html"><button>Fazer reserva</button></a>
+                    </div>
+                    <div class="padrao-img">
+                        <img src="assets/imgs/08/corporativo-img.jpg" alt="mesa com taça vazias">
+                    </div>
+                </div>
+
+                <div class="item reverse flex">
+                    <div class="padrao-txt">
+                        <h2>CONFRATERNIZAÇÕES</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus optio vel et quae iste,
+                            itaque qui architecto quisquam, aliquam fugit laborum sint illum delectus, asperiores
+                            numquam aut. Magni, quasi ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Consectetur enim rem sint quaerat voluptatibus eaque voluptatum, temporibus esse ea suscipit
+                            tempora.</p>
+                        <a href="contato.html"><button>Fazer reserva</button></a>
+                    </div>
+                    <div class="padrao-img">
+                        <img src="assets/imgs/08/confraternizacao-img.jpg" alt="mesa com prato e talheres">
+                    </div>
+                </div>
+
+                <div class="item corporativo flex">
+                    <div class="padrao-txt">
+                        <h2>ANIVERSÁRIOS</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus optio vel et quae iste,
+                            itaque qui architecto quisquam, aliquam fugit laborum sint illum delectus, asperiores
+                            numquam aut. Magni, quasi ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Consectetur enim rem sint quaerat voluptatibus eaque voluptatum, temporibus esse ea suscipit
+                            tempora.</p>
+                        <a href="contato.html"><button>Fazer reserva</button></a>
+                    </div>
+                    <div class="padrao-img">
+                        <img src="assets/imgs/08/aniversario-img.jpg" alt="mesa com taça vazias">
+                    </div>
+                </div>
+
+                <div class="item reverse flex">
+                    <div class="padrao-txt">
+                        <h2>CASAMENTOS</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus optio vel et quae iste,
+                            itaque qui architecto quisquam, aliquam fugit laborum sint illum delectus, asperiores
+                            numquam aut. Magni, quasi ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Consectetur enim rem sint quaerat voluptatibus eaque voluptatum, temporibus esse ea suscipit
+                            tempora.</p>
+                        <a href="contato.html"><button>Fazer reserva</button></a>
+                    </div>
+                    <div class="padrao-img">
+                        <img src="assets/imgs/08/casamento-img.jpg" alt="mesa com taça vazias">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer id="footer1" class="footer1 flex">
+        <div class="limite">
+            <div class="flex">
+                <i class="fa-solid fa-phone fa-flip-horizontal"></i>
+                <h3>Ligue e faça a sua reserva</h3>
+                <p>94002-8922</p>
+            </div>
+        </div>
+    </footer> <!-- Fim do footer1 -->
+
+    <footer id="footer2" class="footer2">
+        <p>Frésco Restaurante © 2024 | Desenvolvido por <a href="https://portfolio-seven-xi-10.vercel.app/" target="_blank" class="marca-texto">Louanderson Santos</a></p>
+    </footer>  <!-- Fim do footer2 -->
+
+    <script src="./javascript/menu.js"></script>
 </body>
+
 </html>
