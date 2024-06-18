@@ -55,7 +55,7 @@ section.eventos .flex {
     justify-content: space-between;
 }
 
-section.eventos .item {
+section.eventos .box {
     margin-bottom: 140px;
 }
 
@@ -90,4 +90,70 @@ section.eventos .item {
 
 .reverse.flex {
     flex-direction: row-reverse;
+}
+
+/* MEDIAS */
+
+/* MOBILE */
+@media screen and (max-width: 560px) and (min-width: 320px) {
+    /* HERO */
+
+    .hero-txt h1 {
+        font-size: 80px;
+    }
+
+    .hero-eventos .barra-horizontal img {
+        width: 260px;
+    }
+
+    /* EVENTOS */
+
+    section.eventos .flex {
+        flex-direction: column;
+    }
+
+    .padrao-txt,
+    .padrao-img img  {
+        width: 100%;
+    }
+
+    .padrao-txt h2 {
+        font-size: 26px;
+    }
+
+    .padrao-txt button {
+        margin-bottom: 20px;
+    }
+
+    section.eventos .box:nth-last-child(1) {
+        margin-bottom: 0px;
+    }
+
+}
+
+/* TABLET */
+@media screen and (max-width: 980px) and (min-width: 760px) {
+    
+    section.eventos .flex {
+        flex-direction: column;
+    }
+
+    .padrao-txt,
+    .padrao-img img {
+        width: 100%;
+    }
+
+    .padrao-txt h2 {
+        font-size: 40px;
+    }
+    
+    .padrao-txt p {
+        font-size: 24px;
+    }
+
+    .padrao-txt button {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
 }
